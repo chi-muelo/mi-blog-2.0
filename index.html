@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noe Blog</title>
+  <title>Noe Blog | Notas y proyectos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
       <span class="brand-mark">N</span>
       <div>
         <strong>Noe Blog</strong>
-        <p>Ideas, historias y estilo</p>
+        <p>Notas claras sobre diseño, escritura y vida creativa</p>
       </div>
     </div>
     <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menú</button>
@@ -30,29 +30,29 @@
   <main>
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <p class="eyebrow">Blog personal</p>
-        <h1>Un espacio limpio para contar lo que pienso y lo que construyo.</h1>
+        <p class="eyebrow">Blog editorial</p>
+        <h1>Un espacio sobrio para escribir con intención y compartir procesos reales.</h1>
         <p class="lead">
-          Un blog moderno en HTML, CSS y JavaScript, pensado para publicar notas,
-          reflexiones, proyectos y recomendaciones con una estética clara.
+          Este blog reúne apuntes personales, referencias visuales y pequeñas historias
+          de trabajo creativo con una presentación limpia, seria y fácil de leer.
         </p>
         <div class="hero-actions">
           <a class="primary-button" href="#articulos">Ver artículos</a>
           <a class="secondary-button" href="#sobre-mi">Conocerme</a>
         </div>
         <ul class="stats">
-          <li><strong>12+</strong><span>artículos</span></li>
-          <li><strong>4</strong><span>categorías</span></li>
-          <li><strong>1</strong><span>voz propia</span></li>
+          <li><strong>12+</strong><span>entradas</span></li>
+          <li><strong>4</strong><span>temas</span></li>
+          <li><strong>1</strong><span>criterio editorial</span></li>
         </ul>
       </div>
 
       <div class="hero-card">
         <img src="noe.jpg" alt="Foto de perfil de Noe" class="profile-image">
         <div class="hero-card-copy">
-          <p class="card-kicker">Perfil editorial</p>
+          <p class="card-kicker">Autora del blog</p>
           <h2>Noe</h2>
-          <p>Escritura breve, diseño sobrio y contenido fácil de leer en cualquier pantalla.</p>
+          <p>Escritura breve, diseño sobrio y contenido pensado para una lectura cómoda en cualquier pantalla.</p>
         </div>
       </div>
     </section>
@@ -68,17 +68,32 @@
       <aside class="sidebar">
         <article class="profile-panel" id="sobre-mi">
           <img src="noe.jpg" alt="Retrato de Noe" class="sidebar-image">
-          <h3>Sobre mí</h3>
+          <h3>Sobre este espacio</h3>
           <p>
             Este blog está pensado para compartir ideas personales, aprendizajes y
-            pequeñas historias con una presentación simple y elegante.
+            pequeñas historias con una voz más cercana y una presentación profesional.
           </p>
         </article>
 
         <article class="contact-panel" id="contacto">
           <h3>Contacto</h3>
-          <p>Escríbeme para sugerir temas, colaboraciones o comentarios.</p>
-          <a href="mailto:hola@mi-blog.com">hola@mi-blog.com</a>
+          <p>Envía un mensaje para sugerir temas, colaboraciones o comentarios.</p>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Nombre
+              <input type="text" name="name" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" name="email" placeholder="tu@email.com" required>
+            </label>
+            <label>
+              Mensaje
+              <textarea name="message" rows="5" placeholder="Cuéntame en qué puedo ayudarte" required></textarea>
+            </label>
+            <button type="submit" class="primary-button">Enviar mensaje</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
         </article>
       </aside>
     </section>
