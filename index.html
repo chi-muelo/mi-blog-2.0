@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noe Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">N</span>
+      <div>
+        <strong>Noe Blog</strong>
+        <p>Ideas, historias y estilo</p>
+      </div>
+    </div>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menú</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#articulos">Artículos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Blog personal</p>
+        <h1>Un espacio limpio para contar lo que pienso y lo que construyo.</h1>
+        <p class="lead">
+          Un blog moderno en HTML, CSS y JavaScript, pensado para publicar notas,
+          reflexiones, proyectos y recomendaciones con una estética clara.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#articulos">Ver artículos</a>
+          <a class="secondary-button" href="#sobre-mi">Conocerme</a>
+        </div>
+        <ul class="stats">
+          <li><strong>12+</strong><span>artículos</span></li>
+          <li><strong>4</strong><span>categorías</span></li>
+          <li><strong>1</strong><span>voz propia</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-card">
+        <img src="noe.jpg" alt="Foto de perfil de Noe" class="profile-image">
+        <div class="hero-card-copy">
+          <p class="card-kicker">Perfil editorial</p>
+          <h2>Noe</h2>
+          <p>Escritura breve, diseño sobrio y contenido fácil de leer en cualquier pantalla.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid" id="articulos">
+      <div class="section-heading">
+        <p class="eyebrow">Últimas entradas</p>
+        <h2>Publicaciones recientes</h2>
+      </div>
+
+      <div class="posts-grid" id="postsGrid"></div>
+
+      <aside class="sidebar">
+        <article class="profile-panel" id="sobre-mi">
+          <img src="noe.jpg" alt="Retrato de Noe" class="sidebar-image">
+          <h3>Sobre mí</h3>
+          <p>
+            Este blog está pensado para compartir ideas personales, aprendizajes y
+            pequeñas historias con una presentación simple y elegante.
+          </p>
+        </article>
+
+        <article class="contact-panel" id="contacto">
+          <h3>Contacto</h3>
+          <p>Escríbeme para sugerir temas, colaboraciones o comentarios.</p>
+          <a href="mailto:hola@mi-blog.com">hola@mi-blog.com</a>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Noe Blog. Hecho con HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
